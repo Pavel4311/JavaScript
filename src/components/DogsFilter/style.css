@@ -1,0 +1,56 @@
+.dogs-filter {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #f8f9ff;
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.filter-btn:nth-child(2) {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.filter-btn:nth-child(2):hover {
+  background: #fff5f5;
+}
+
+.filter-btn:nth-child(2).active {
+  background: #ff6b6b;
+  color: white;
+  border-color: #ff6b6b;
+}
+
+@media (max-width: 480px) {
+  .dogs-filter {
+    gap: 12px;
+  }
+
+  .filter-btn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
